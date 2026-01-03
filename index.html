@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+	<title>Pattern Viewer</title>
+	<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+	<main class="app-shell">
+		<div class="tablist" role="tablist" aria-label="Views">
+			<button class="tab is-active" role="tab" aria-selected="true" aria-controls="panel-rows" id="tab-row-by-row">Row-by-row</button>
+			<button class="tab" role="tab" aria-selected="false" aria-controls="panel-pattern" id="tab-pattern">Pattern</button>
+		</div>
+
+		<section id="panel-rows" class="tabpanel is-active" role="tabpanel" tabindex="0" aria-labelledby="tab-row-by-row">
+			<div class="row-controls">
+				<label for="row-input">Row:</label>
+				<button type="button" id="row-minus" class="row-button" aria-label="Previous row">−</button>
+				<input type="text" id="row-input" value="1" inputmode="numeric" />
+				<button type="button" id="row-plus" class="row-button" aria-label="Next row">+</button>
+			</div>
+			<div class="row-view">
+				<div class="placeholder">Row content will appear here.</div>
+			</div>
+		</section>
+
+		<section id="panel-pattern" class="tabpanel" role="tabpanel" tabindex="0" aria-labelledby="tab-pattern">
+			<div class="pattern-layout">
+				<aside class="pattern-pane meta">
+					<div class="pane-body">
+						<div id="palette-list" class="palette-list" aria-label="Palette list"></div>
+					</div>
+				</aside>
+				<section class="pattern-pane canvas">
+					<div class="pane-body canvas-surface" aria-label="Pattern canvas" tabindex="0">
+						<canvas id="pattern-canvas"></canvas>
+					</div>
+				</section>
+			</div>
+		</section>
+	</main>
+
+	<script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,19 @@
+{
+  "name": "Andrew's P&O Rug",
+  "colors": {
+    "#535353": "Dark Grey",
+    "#949495": "Mid Grey",
+    "#D6D7D7": "Light Grey",
+    "#FFFFFF": "White",
+    "#123274": "Navy Blue",
+    "#0000F5": "Royal Blue",
+    "#2F4F5F": "Dark Muted Blue",
+    "#4A90C8": "Sky Blue",
+    "#99CAFB": "Pale Sky Blue",
+    "#BEAA87": "Beige",
+    "#FDEC4F": "Yellow",
+    "#ED7830": "Orange",
+    "#D52D1F": "Red",
+    "#931C13": "Dark Red"
+  }
+}
