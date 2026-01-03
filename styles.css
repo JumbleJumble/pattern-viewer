@@ -95,7 +95,7 @@ body {
   padding: 18px;
   box-shadow: var(--shadow);
   display: none;
-  overflow: hidden;
+  overflow: auto;
 }
 
 .tabpanel.is-active {
