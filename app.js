@@ -113,7 +113,7 @@ const renderPalette = (colors) => {
 const renderRowColors = (rowIndex, grid, palette) => {
   if (!rowView || !grid || !palette) return;
   
-  const row = grid[rowIndex - 1];
+  const row = grid[grid.length - rowIndex];
   if (!row) return;
 
   // Get unique colors in this row
